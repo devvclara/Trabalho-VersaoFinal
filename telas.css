@@ -1,0 +1,76 @@
+/*Base*/
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+body{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg,#0f1419 0%,#1a2332 100%);
+  color:#fff; line-height:1.6; min-height:100vh;
+}
+
+/* Header */
+.site-header{
+  background: rgba(15,20,25,.95);
+  padding:1rem 0; position:sticky; top:0; z-index:100;
+  backdrop-filter: blur(10px);
+  border-bottom:1px solid rgba(255,255,255,.1);
+  text-align:center;
+}
+.site-header .logo{height:120px;width:auto;display:block;margin:0 auto}
+.logo{cursor:pointer}
+
+/*Container*/
+.container{max-width:1200px;margin:0 auto;padding:2rem}
+
+/*Título de seção */
+.section-title{
+  font-size:2rem;font-weight:700;margin-bottom:1.25rem;color:#fff;position:relative;display:block;width:100%;
+}
+.section-title::after{content:'';position:absolute;bottom:-5px;left:0;width:60px;height:3px;background:#e74c3c}
+
+/*Painéis*/
+.panel{
+  background: linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.04));
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:16px; padding:1.5rem; backdrop-filter: blur(10px);
+  box-shadow:0 10px 30px rgba(0,0,0,.25);
+  margin-bottom:1.5rem;
+}
+
+/*título + meta alinhado*/
+.meta{display:flex;flex-wrap:wrap;gap:.5rem 1rem;opacity:.9;font-size:.95rem}
+.meta strong{opacity:1}
+
+/* Vídeo*/
+.video-container{position:relative;border-radius:15px;overflow:hidden;margin:1rem 0}
+iframe, embed{
+  width:100%; border:0; border-radius:15px;
+  box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+/*Botão/Link(Voltar)*/
+.btn,
+.voltar-home{
+  display:inline-block;padding:.6rem 1rem;border:1px solid #e74c3c;border-radius:.75rem;
+  text-decoration:none;color:inherit;font-weight:600;transition:.25s
+}
+.btn:hover,.voltar-home:hover{background:#e74c3c;color:#fff;transform:translateY(-1px)}
+
+/*Acessórios*/
+.detalhes-filme h2 {margin-top: 20px;}
+.detalhes-filme h2.section-title {color: #fff;}
+.detalhes-filme h3 {color: #e74c3c;font-weight: bold; margin-top: 15px;}
+
+.trailer{margin-bottom:24px}
+
+/* Footer */
+.site-footer{
+  background: rgba(15,20,25,.95);
+  text-align:center; padding:2rem; margin-top:2rem;
+  border-top:1px solid rgba(255,255,255,.1);
+}
+.site-footer p{color:rgba(255,255,255,.8)}
+
+/* Cursor “mão”*/
+.card-cover:hover{cursor:pointer}
+
+/* Responsivo */
+@media (max-width:900px){ .site-header .logo{height:100px} }

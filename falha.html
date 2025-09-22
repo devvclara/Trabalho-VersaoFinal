@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nada encontrado • HiperFilmes</title>
+  <link rel="stylesheet" href="telas.css" />
+  <style>
+    .nf-wrap{min-height:60vh;display:grid;place-items:center;padding:2rem;text-align:center}
+    .nf-card{max-width:720px}
+    .nf-actions{margin-top:1rem;display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap}
+    mark{background:#fff1;color:#fff;padding:0 .25rem;border-radius:.25rem}
+  </style>
+</head>
+<body>
+  <main class="nf-wrap">
+    <section class="nf-card">
+      <h1>Não rolou</h1>
+      <p class="muted">A gente não achou nada para <mark id="term">“—”</mark>.</p>
+
+      <div class="nf-actions">
+        <a class="btn" href="index.html#melhores">Ver “Melhores”</a>
+        <a class="btn" href="index.html#noscinemas">Nos Cinemas</a>
+        <a class="btn" href="index.html#criticas">Aclamados</a>
+        <a class="btn" href="index.html">Voltar à Home</a>
+      </div>
+
+      <p class="muted" style="margin-top:1rem">
+        Dica: tente nome oficial, ano ou apelido (ex.: <em>“interstellar”</em>, <em>“nolan”</em>, <em>“2014”</em>).
+      </p>
+    </section>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const q = params.get('q') || '';
+    document.getElementById('term').textContent = `“${q}”`;
+  </script>
+</body>
+</html>

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HiperFilmes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-center">
+      <figure>
+        <a href="index.html">
+          <img src="./Arquivos/logo.png" alt="HiperFilmes" class="logo" />
+        </a>
+      </figure>
+
+      <form id="barra-busca" class="barra-busca">
+        <label for="search-input" class="sr-only">Pesquisar filmes</label>
+        <input id="search-input" name="q" type="search" class="digitacao" placeholder="Pesquisar" />
+        <small id="search-help" class="search-help" aria-live="polite"></small>
+        <button class="botao" type="submit">Buscar</button>
+      </form>
+    </div>
+
+    <nav aria-label="navegação principal" class="botao-barra">
+      <ul>
+        <li><a href="#melhores">Melhores</a></li>
+        <li><a href="#trailer">Trailer em destaque</a></li>
+        <li><a href="#noscinemas">Nos Cinemas</a></li>
+        <li><a href="#criticas">Aclamados pela crítica</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="melhores" aria-labelledby="melhores-title">
+      <h2 id="melhores-title" class="section-title">Melhores</h2>
+
+      <div class="cards">
+        <article class="card">
+          <figure class="card-media">
+            <img class="card-cover" src="https://is1-ssl.mzstatic.com/image/thumb/f9szHsvpdwo7ouhcLO0aww/1200x675.jpg" alt="Cartaz: O Impossível" />
+            <figcaption class="sr-only">Cartaz do filme O Impossível</figcaption>
+          </figure>
+
+          <div class="badge">
+            Thriller / Documentário
+            <button type="button" class="open-age" data-age="12" data-reason="Temas intensos e cenas de desastre">Classificação</button>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-title"><a href="o-impossivel.html">O Impossível</a></h3>
+            <p class="card-text"><time datetime="2012-12-21">2012</time> · Drama</p>
+
+            <details>
+              <summary>Sinopse</summary>
+              <p>"O Impossível" conta a história real de uma família espanhola que sobreviveu ao tsunami de 2004…</p>
+            </details>
+
+            <aside class="movie-aside">
+              <p><strong>Curiosidade:</strong> Muitos dos figurantes são sobreviventes do tsunami de 2004.</p>
+            </aside>
+
+            <div class="card-footer">
+              <a class="read-more" href="o-impossivel.html">Ver mais →</a>
+              <meter min="0" max="10" value="8.4" title="Nota 8.4/10">8.4/10</meter>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure class="card-media">
+            <img class="card-cover" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9USm6FMDl__Pt6sSi3ToxOA30jO3jgQoo63YLI9-YxKpZssRX52RIxKa6or22E9viWv1rl9gDKUVpC-ndRmBZwZGKwoBp9dxnM2NHfsUOUK5XFOVidjfp4mgoqUsVyqNI7CI-lIna_v48_vXGDi7mTuTRC8uIU1M2SOAO3GByO7-uwoiS5W4C82Qc/s2400/Avatar%20-%20O%20Caminho%20da%20%C3%81gua-Repassando.jpg" alt="Cartaz: Avatar - O Caminho da Água" />
+            <figcaption class="sr-only">Cartaz do filme Avatar: O Caminho da Água</figcaption>
+          </figure>
+
+          <div class="badge">
+            Ficção científica
+            <button type="button" class="open-age" data-age="12" data-reason="Ação e perigo fantasioso">Classificação</button>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-title"><a href="avatar.html">Avatar: O Caminho da Água</a></h3>
+            <p class="card-text"><time datetime="2022-12-15">2022</time> · Drama / Ação</p>
+
+            <details>
+              <summary>Sinopse</summary>
+              <p>Após formar uma família, Jake Sully e Ney'tiri fazem de tudo para ficarem juntos…</p>
+            </details>
+
+            <aside class="movie-aside">
+              <p><strong>Curiosidade:</strong> O elenco aprendeu a mergulhar e segurar a respiração por vários minutos.</p>
+            </aside>
+
+            <div class="card-footer">
+              <a class="read-more" href="avatar.html">Ver mais →</a>
+              <meter min="0" max="10" value="8.7" title="Nota 8.7/10">8.7/10</meter>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure class="card-media">
+            <img class="card-cover" src="https://comunica.ufu.br/sites/comunica.ufu.br/files/conteudo/noticia/imagem_destaque_99.jpg" alt="Cartaz: Interestelar" />
+            <figcaption class="sr-only">Cartaz do filme Interestelar</figcaption>
+          </figure>
+
+          <div class="badge">
+            Ficção científica
+            <button type="button" class="open-age" data-age="10" data-reason="Tensão e temas científicos complexos">Classificação</button>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-title"><a href="interestelar.html">Interestelar</a></h3>
+            <p class="card-text"><time datetime="2014-11-06">2014</time> · Drama / Aventura</p>
+
+            <details>
+              <summary>Sinopse</summary>
+              <p>As reservas naturais da Terra estão no fim e um grupo de astronautas busca um novo lar…</p>
+            </details>
+
+            <aside class="movie-aside">
+              <p><strong>Curiosidade:</strong> As nuvens de poeira foram criadas com pó sintético à base de celulose.</p>
+            </aside>
+
+            <div class="card-footer">
+              <a class="read-more" href="interestelar.html">Ver mais →</a>
+              <meter min="0" max="10" value="9.2" title="Nota 9.2/10">9.2/10</meter>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="noscinemas" aria-labelledby="noscinemas-title">
+      <h2 id="noscinemas-title" class="section-title">Nos Cinemas</h2>
+
+      <div class="cards">
+        <article class="card">
+          <figure class="card-media">
+            <img class="card-cover" src="https://uploads.alternativanerd.com.br/wp-content/uploads/2025/03/AN_Demon-Slayer-Kimetsu-no-Yaiba-Castelo-Infinito-Capa.jpg" alt="Cartaz: Demon Slayer - Kimetsu no Yaiba" />
+            <figcaption class="sr-only">Cartaz do filme Demon Slayer</figcaption>
+          </figure>
+
+          <div class="badge">
+            Anime
+            <button type="button" class="open-age" data-age="16" data-reason="Violência estilizada e temas sombrios">Classificação</button>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-title"><a href="demon-slayer.html">Demon Slayer: Kimetsu No Yaiba</a></h3>
+            <p class="card-text"><time datetime="2025-09-11">2025</time> · Ação / Aventura</p>
+
+            <details>
+              <summary>Sinopse</summary>
+              <p>Os Pilares enfrentam Muzan e são levados para a Fortaleza Infinita…</p>
+            </details>
+
+            <aside class="movie-aside">
+              <p><strong>Curiosidade:</strong> Bateu ¥30 bilhões no Japão em 52 dias.</p>
+            </aside>
+
+            <div class="card-footer">
+              <a class="read-more" href="demon-slayer.html">Ver mais →</a>
+              <meter min="0" max="10" value="9.7" title="Nota 9.7/10">9.7/10</meter>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure class="card-media">
+            <img class="card-cover" src="https://cinepop.com.br/wp-content/uploads/2024/12/invocacaodomal4_2.webp" alt="Cartaz: Invocação do Mal 4 — O Último Ritual" />
+            <figcaption class="sr-only">Cartaz do filme Invocação do Mal 4</figcaption>
+          </figure>
+
+          <div class="badge">
+            Terror
+            <button type="button" class="open-age" data-age="16" data-reason="Terror, sustos e tensão prolongada">Classificação</button>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-title"><a href="invocacao-do-mal.html">Invocação do Mal 4: O Último Ritual</a></h3>
+            <p class="card-text"><time datetime="2025-09-04">2025</time> · Terror</p>
+
+            <details>
+              <summary>Sinopse</summary>
+              <p>Ed e Lorraine Warren tentam banir um demônio da casa de uma família.</p>
+            </details>
+
+            <aside class="movie-aside">
+              <p><strong>Curiosidade:</strong> Mia Tomlinson assume o papel de Judy Warren.</p>
+            </aside>
+
+            <div class="card-footer">
+              <a class="read-more" href="invocacao-do-mal.html">Ver mais →</a>
+              <meter min="0" max="10" value="8.6" title="Nota 8.6/10">8.6/10</meter>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <figure class="card-media">
+            <img class="card-cover" src="https://ingresso-a.akamaihd.net/b2b/production/uploads/article/image/3381/b95684748aafe9aae83dd24cff48fc26.jpg" alt="Cartaz: Animais Perigosos" />
+            <figcaption class="sr-only">Cartaz do filme Animais Perigosos</figcaption>
+          </figure>
+
+          <div class="badge">
+            Terror de sobrevivência
+            <button type="button" class="open-age" data-age="18" data-reason="Violência forte e conteúdo perturbador">Classificação</button>
+          </div>
+
+          <div class="card-body">
+            <h3 class="card-title"><a href="animais-perigosos.html">Animais Perigosos</a></h3>
+            <p class="card-text"><time datetime="2025-09-18">2025</time> · Terror</p>
+
+            <details>
+              <summary>Sinopse</summary>
+              <p>Um serial killer obcecado por tubarões mantém uma surfista cativa em seu barco…</p>
+            </details>
+
+            <aside class="movie-aside">
+              <p><strong>Curiosidade:</strong> O diretor Sean Byrne é fã de “Tubarão” (1975).</p>
+            </aside>
+
+            <div class="card-footer">
+              <a class="read-more" href="animais-perigosos.html">Ver mais →</a>
+              <meter min="0" max="10" value="4.3" title="Nota 4.3/10">4.3/10</meter>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+<section id="criticas" aria-labelledby="criticas-title">
+  <h2 id="criticas-title" class="section-title">Aclamados pela crítica</h2>
+
+  <div class="cards">
+    <article class="card">
+      <figure class="card-media">
+        <img class="card-cover" src="https://www.termometrooscar.com/uploads/1/4/8/8/1488234/oppenheimer-full-movie-in-hd-leaked-online-christopher-nolans-biographical-thriller-faces-wrath-of-piracy-is-available-to-download-illegally_orig.jpg" alt="Cartaz (Oppenheimer)">
+        <figcaption class="sr-only">Cartaz do filme Oppenheimer</figcaption>
+      </figure>
+
+      <div class="bagde">
+        Thriller político
+        <button type="button" class="open-age" data-age="14" data-reason="Temas adultos e tensão histórica">Classificação</button>
+      </div>
+
+      <div class="card-body">
+        <h1><a href="oppenheimer.html">Oppenheimer</a></h1>
+        <p class="card-text">
+          <time datetime="2023-07-20">2023</time> · Suspense
+        </p>
+        <details>
+          <summary>Sinopse</summary>
+          <p>O físico J. Robert Oppenheimer trabalha com uma equipe de cientistas durante o Projeto Manhattan, levando ao desenvolvimento da bomba atômica.</p>
+        </details>
+        <aside class="movie-aside">
+          <p><strong>Curiosidade:</strong> Oppenheimer conta com uma participação especial da filha de Nolan como vítima dos impactos da bomba, em uma alucinação do protagonista.</p>
+        </aside>
+        <div class="card-footer">
+          <a class="read-more" href="oppenheimer.html">Ver mais →</a>
+          <meter min="0" max="10" value="8.3" title="Nota 8.3/10">8.3/10</meter>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <figure class="card-media">
+        <img class="card-cover" src="https://wp.ufpel.edu.br/empauta/files/2018/10/NasceUmaEstrela_quadrado.jpg" alt="Cartaz (Nasce uma Estrela)">
+        <figcaption class="sr-only">Cartaz do filme Nasce uma Estrela</figcaption>
+      </figure>
+
+      <div class="bagde">
+        Musical
+        <button type="button" class="open-age" data-age="16" data-reason="Temas adultos e uso de substâncias">Classificação</button>
+      </div>
+
+      <div class="card-body">
+        <h1><a href="nasce-uma-estrela.html">Nasce uma Estrela</a></h1>
+        <p class="card-text">
+          <time datetime="2018-10-11">2018</time> · Drama/Romance
+        </p>
+        <details>
+          <summary>Sinopse</summary>
+          <p>Um músico experiente, Jackson Maine, descobre e se apaixona pela jovem cantora Ally. Enquanto a carreira dela começa a decolar, a de Jackson entra em declínio por causa de problemas pessoais e vícios.</p>
+        </details>
+        <aside class="movie-aside">
+          <p><strong>Curiosidade:</strong> <mark>Ganhador do Oscar de Melhor Canção Original.</mark></p>
+        </aside>
+        <div class="card-footer">
+          <a class="read-more" href="nasce-uma-estrela.html">Ver mais →</a>
+          <meter min="0" max="10" value="8.5" title="Nota 8.5/10">8.5/10</meter>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <figure class="card-media">
+        <img class="card-cover" src="https://nerdizmo.ig.com.br/wp-content/uploads/2021/12/homem-aranha-sem-volta-para-casa-critica-capa.jpg" alt="Cartaz (Homem-Aranha: Sem Volta para Casa)">
+        <figcaption class="sr-only">Cartaz do filme Homem-Aranha: Sem Volta para Casa</figcaption>
+      </figure>
+
+      <div class="bagde">
+        Marvel
+        <button type="button" class="open-age" data-age="12" data-reason="Ação frequente e perigo moderado">Classificação</button>
+      </div>
+
+      <div class="card-body">
+        <h1><a href="homem-aranha.html">Homem-Aranha: Sem Volta para Casa</a></h1>
+        <p class="card-text">
+          <time datetime="2021-12-16">2021</time> · Ação/Fantasia
+        </p>
+        <details>
+          <summary>Sinopse</summary>
+          <p>Peter Parker tem a sua identidade secreta revelada e pede ajuda ao Doutor Estranho. Quando o feitiço não sai como esperado, eles enfrentam inimigos de todo o multiverso.</p>
+        </details>
+        <aside class="movie-aside">
+          <p><strong>Curiosidade:</strong> Foi um dos filmes mais lucrativos de 2021, arrecadando mais de $1,9 bilhão e tornando-se o maior sucesso do ano.</p>
+        </aside>
+        <div class="card-footer">
+          <a class="read-more" href="homem-aranha.html">Ver mais →</a>
+          <meter min="0" max="10" value="8.6" title="Nota 8.6/10">8.6/10</meter>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+    <section id="trailer" class="trailer-block" aria-labelledby="trailer-title">
+      <h2 id="trailer-title" class="section-title">Trailer em destaque</h2>
+
+      <div class="video-container" style="margin-top: 0.5rem;"></div>
+      <iframe
+        id="trailer-yt"
+        width="100%" height="800"
+        src="https://www.youtube.com/embed/SNMTY1-XlOE?enablejsapi=1&rel=0&modestbranding=1"
+        title="Trailer em destaque"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <p class="trailer-progress-label">Processo de carregamento do trailer</p>
+      <progress id="trailerprogress" value="85" max="100">85%</progress>
+    </section>
+
+    <section id="trilhas" aria-labelledby="trilhas-title">
+      <p class="soundtrack-desc">Ouça a soundtrack de: Nasce Uma Estrela</p>
+      <audio id="bg-audio" controls loop preload="metadata">
+        <source src="./Arquivos/Shallow (Radio Edit).mp3" type="audio/mpeg" />
+      </audio>
+    </section>
+  </main>
+
+  <footer id="site-footer">
+    <p>&copy; 2025 • HiperFilmes • Todos os direitos reservados</p>
+  </footer>
+
+  <dialog id="ageDialog" aria-labelledby="ageDialogTitle">
+    <h3 id="ageDialogTitle">Classificação indicativa</h3>
+    <p style="display:flex;align-items:center;gap:.5rem;">
+      <span id="ageChip" class="age-chip">12</span>
+      <span id="ageText">Não recomendado para menores de 12 anos.</span>
+    </p>
+    <small id="ageReason" style="opacity:.85;display:block;margin-top:.75rem;"></small>
+    <button id="closeDialog">Fechar</button>
+  </dialog>
+
+  <script>
+    //Classificação
+    const dlg = document.getElementById('ageDialog');
+    const ageChip = document.getElementById('ageChip');
+    const ageText = document.getElementById('ageText');
+    const ageReason = document.getElementById('ageReason');
+
+    const classFromAge = (age) => {
+      if (!age || age === 'L' || age.toLowerCase() === 'livre') return 'livre';
+      const n = parseInt(age, 10);
+      if (isNaN(n)) return 'a12';
+      if (n <= 10) return 'a10';
+      if (n <= 12) return 'a12';
+      if (n <= 14) return 'a14';
+      if (n <= 16) return 'a16';
+      return 'a18';
+    };
+
+    const textoFromAge = (age) => {
+      if (!age || age === 'L' || age.toLowerCase() === 'livre') return 'Classificação LIVRE.';
+      const n = parseInt(age, 10);
+      return `Não recomendado para menores de ${n} anos.`;
+    };
+
+    document.querySelectorAll('.open-age').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const age = (btn.dataset.age || '12').trim();
+        const reason = (btn.dataset.reason || '').trim();
+
+        ageChip.className = 'age-chip ' + classFromAge(age);
+        ageChip.textContent = (age.toUpperCase() === 'L' ? 'L' : age);
+
+        ageText.textContent = textoFromAge(age);
+        ageReason.textContent = reason ? `Motivo: ${reason}` : '';
+
+        dlg.showModal();
+      });
+    });
+
+    document.getElementById('closeDialog').addEventListener('click', () => dlg.close());
+  </script>
+
+  <script>
+    //Cards clicáveis 
+    document.querySelectorAll('.card').forEach((card) => {
+      const link = card.querySelector('.read-more');
+      if (!link) return;
+      const url = link.getAttribute('href');
+
+      card.setAttribute('role', 'link');
+      card.setAttribute('tabindex', '0');
+
+      card.addEventListener('click', (e) => {
+        if (e.target.closest('a, button, summary, details, input, textarea, select, label')) return;
+        window.location.href = url;
+      });
+
+      card.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          window.location.href = url;
+        }
+      });
+    });
+  </script>
+
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+  let ytPlayer;
+  const audioEl = document.getElementById('bg-audio');
+
+  function onYouTubeIframeAPIReady() {
+    ytPlayer = new YT.Player('trailer-yt', {
+      events: { onStateChange: onYTStateChange }
+    });
+  }
+
+  function onYTStateChange(event) {
+    // quando o vídeo tocar, pausa o áudio
+    if (event.data === YT.PlayerState.PLAYING && audioEl) {
+      audioEl.pause();
+    }
+  }
+
+  //quando o áudio tocar, pausa o vídeo
+  if (audioEl) {
+    audioEl.addEventListener('play', () => {
+      if (ytPlayer && ytPlayer.getPlayerState && ytPlayer.getPlayerState() === YT.PlayerState.PLAYING) {
+        ytPlayer.pauseVideo();
+      }
+    });
+  }
+</script>
+
+  <script>
+    //Scroll padding dinâmico
+    const header = document.querySelector('.site-header');
+    function ajustarScrollPadding() {
+      if (header) document.documentElement.style.scrollPaddingTop = header.offsetHeight + 'px';
+    }
+    window.addEventListener('load', ajustarScrollPadding);
+    window.addEventListener('resize', ajustarScrollPadding);
+  </script>
+
+  <script>
+    //Busca
+    const norm = (s) => (s || "").toString().normalize("NFD").replace(/\p{Diacritic}/gu, "").toLowerCase().trim();
+
+    const CATALOG = [
+      [["o impossivel","impossivel","the impossible","naomi watts"], "o-impossivel.html"],
+      [["avatar","avatar 2","o caminho da agua","way of water","jake sully","neytiri"], "avatar.html"],
+      [["interestelar","interstellar","nolan","cooper"], "interestelar.html"],
+      [["demon slayer","kimetsu no yaiba","castelo infinito","fortaleza infinita"], "demon-slayer.html"],
+      [["invocacao do mal 4","invocacao do mal","conjuring 4","ultimo ritual"], "invocacao-do-mal.html"],
+      [["animais perigosos","sean byrne","shark"], "animais-perigosos.html"],
+      [["oppenheimer","oppen","nolan bomba"], "oppenheimer.html"],
+      [["nasce uma estrela","a star is born","ally","jackson maine"], "nasce-uma-estrela.html"],
+      [["homem aranha","sem volta para casa","no way home","spider man"], "homem-aranha.html"]
+    ];
+
+    const INDEX = CATALOG.map(([terms, url]) => ({ terms: terms.map(norm), url }));
+
+    const MIN_LEN = 4;
+    const form = document.getElementById("barra-busca");
+    const input = document.getElementById("search-input");
+    const help = document.getElementById("search-help");
+    const btn = form?.querySelector("button[type=submit]");
+
+    function updateHint() {
+      const q = norm(input?.value || "");
+      if (help) help.textContent = (!q || q.length >= MIN_LEN) ? "" : `Digite pelo menos ${MIN_LEN} caracteres para pesquisar.`;
+      if (btn) btn.disabled = q.length < MIN_LEN;
+    }
+    updateHint();
+    input?.addEventListener("input", updateHint);
+
+    if (form && input) {
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const q = norm(input.value);
+        if (q.length < MIN_LEN) { updateHint(); input.focus(); return; }
+
+        let hit = INDEX.find(entry => entry.terms.includes(q));
+        if (!hit) {
+          hit = INDEX.find(entry => entry.terms.some(t => t.includes(q) || q.includes(t)));
+        }
+        window.location.href = hit ? hit.url : `falha.html?q=${encodeURIComponent(input.value)}`;
+      });
+    }
+  </script>
+</body>
+</html>
